@@ -4,7 +4,14 @@ angular.module("todoListApp", []) // 2nd param defines dependencies and [] angul
 //controller then must be injected into our template so it knows to use it there ng-controller directive in html
 .controller('mainCtrl', function($scope) {
   //this helloWorld = this function which does a log - So when called, it's printed or logged
-  $scope.helloWorld = function () {
-    console.log("Hello There from Controller");
+  $scope.helloWorld = function() {
+    console.log("Hello There from the HelloWorld Ctrl");
   };
-});
+})
+
+.controller('coolCtrl', function($scope) {
+  $scope.whoAmI = function() {
+    console.log("Hello from the Cool Ctrl" );
+  }
+
+})
